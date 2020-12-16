@@ -22,6 +22,9 @@ namespace LearningDotNet.Controllers
         {
 
             ViewData["Hello"] = "World";
+            ViewData["CurrentPerson"] = new Person(
+                FirstName: "Bob", LastName: "Marley", Age: 18
+            );
             return View();
         }
 
